@@ -2,15 +2,35 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="utf-8" name="viewport" content="width=device-width,height=device-height, initial-scale = 1.0" />
+    <link rel='stylesheet' href='/stylesheets/style.css' >
   </head>
   <body onresize="parent.resizeTo(375,600)" onload="parent.resizeTo(375,600)">
     <h1><%= title %></h1>
-    <input type="button" value="naver"  onclick="naverwindow()"/>
-    <input type="button" value="daum"  onclick="daumwindow()"/>
-    <input type="button" value="melon"  onclick="melonwindow()"/>
-    <input type="button" value="genie"  onclick="geniewindow()"/>
+          
 
+
+
+      
+    <table>
+      <tr>
+      <td>
+          <input id="naver" class= 'button' type="button" value="naver"  onclick="naverwindow()">
+      </td>
+
+      <td>
+        <input id="daum" class= 'button' type="button" value="daum"  onclick="daumwindow()">
+      </td>
+    </tr>
+  <tr>
+      <td>
+        <input id="melon" class= 'button' type="button" value="melon"  onclick="melonwindow()">
+      </td>
+      <td>
+        <input id="genie" class= 'button' type="button" value="genie"  onclick="geniewindow()">
+      </td>
+      </tr>
+    </table>
     <p>Welcome to <%= title %></p>
   </body>
   <script>

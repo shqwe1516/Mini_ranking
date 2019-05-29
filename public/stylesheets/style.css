@@ -1,8 +1,51 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body{
+  background-color: rgb(239, 243, 247);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+  color: #fff;
+}
+h1{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 60px;
+}
+table{
+  
+  position: relative;
+  text-align: center;
+margin: 0 auto;
+
+  height: 400px;
+  width: 400px;
+}
+.button {
+  letter-spacing: 2px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: capitalize;
+  border: 3px solid #3cb4ff;
+  border-radius: 5px;
+  color: #3cb4ff;
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 50px 50px;
+  position: relative;
+
 }
 
-a {
-  color: #00B7FF;
+
+.button:hover {
+  background-color:#3cb4ff; 
+  color: #fff;
+
 }
+
+

@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
 });
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Title' });
+  res.render('index', { title: 'Mini_Ranking' });
 });
 
 router.get('/melon', function(req, res, next) {

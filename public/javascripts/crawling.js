@@ -6,7 +6,7 @@ var fs = require('fs');
 var mysql = require('mysql');
 var ejs = require('ejs');
 /*
-    mysql> CREATE TABLE daum(
+    mysql> CREATE TABLE melon(
     -> name char(40) not null,
     -> num int PRIMARY KEY AUTO_INCREMENT not null);
 */

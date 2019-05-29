@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='public/stylesheets/ranking.css' type="text/css">
   </head>
 
-  <body   onload ="refresh_timer()" >
+
+  <body id="bodycolor"   onload ="refresh_timer()" >
 
 <div id="naverbox">
-    <div id="naver"><%= title %></div>
+    <div id="title"><%= title %></div>
     <div id="time"></div>
     <%
     rank.forEach(function(item,index){
@@ -27,6 +27,18 @@
 </div>
   </body>
   <script>
+    var title = document.getElementById('title').value;
+    console.log(title);
+   var color=document.getElementById('naverbox');
+   color.style.backgroundColor="#0c8040;"
+   switch(title){
+      case 'Naver Rankig' :
+        color.style.backgroundColor="#0c8040;"
+        break;
+      case 'daum':
+        color.style.backgroundColor="#3cb4ff;"
+        break;
+   }
       function refresh_timer(){
         setTimeout(function(){
             location.reload();
