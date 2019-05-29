@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body onresize="parent.resizeTo(375,600)" onload="parent.resizeTo(375,600)">
+    <h1><%= title %></h1>
+    <input type="button" value="새창열기"  onclick="nwindow()"/>
+
+    <p>Welcome to <%= title %></p>
+  </body>
+  <script>
+        function nwindow(){
+            var url="/naver";
+            window.open(url,"","width=375,height=600,left=600,resizable=no");
+        }
+  </script>
+</html>
