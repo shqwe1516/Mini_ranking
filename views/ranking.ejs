@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hong</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='public/stylesheets/ranking.css' type="text/css">
+  </head>
+
+  <body   onload ="refresh_timer()" >
+
+<div id="naverbox">
+    <div id="naver"><%= title %></div>
+    <div id="time"></div>
+    <%
+    rank.forEach(function(item,index){
+      
+  %>
+          <div id="name">
+              <%= item.name%><br>
+          </div>
+         
+          
+  <%});%>
+  <br>
+</div>
+  </body>
+  <script>
+      function refresh_timer(){
+        setTimeout(function(){
+            location.reload();
+          
+        },60*1000);
+        console.log("시간별 새로고침");
+        var date= new Date();
+        date=date.getFullYear()+'년 '+((date.getMonth()*1)+1)+'월 '+date.getDate()+'일 '+date.getHours()+'시 '+date.getMinutes()+'분 ';
+            var result = document.getElementById("time");
+            result.innerHTML=date +"기준";
+      };
+      </script>
+</html>
+

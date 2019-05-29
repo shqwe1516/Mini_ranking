@@ -6,13 +6,28 @@
   </head>
   <body onresize="parent.resizeTo(375,600)" onload="parent.resizeTo(375,600)">
     <h1><%= title %></h1>
-    <input type="button" value="새창열기"  onclick="nwindow()"/>
+    <input type="button" value="naver"  onclick="naverwindow()"/>
+    <input type="button" value="daum"  onclick="daumwindow()"/>
+    <input type="button" value="melon"  onclick="melonwindow()"/>
+    <input type="button" value="genie"  onclick="geniewindow()"/>
 
     <p>Welcome to <%= title %></p>
   </body>
   <script>
-        function nwindow(){
+        function naverwindow(){
             var url="/naver";
+            window.open(url,"","width=375,height=600,left=600,resizable=no");
+        }
+        function daumwindow(){
+            var url="/daum";
+            window.open(url,"","width=375,height=600,left=600,resizable=no");
+        }
+        function melonwindow(){
+            var url="/melon";
+            window.open(url,"","width=375,height=600,left=600,resizable=no");
+        }
+        function geniewindow(){
+            var url="/genie";
             window.open(url,"","width=375,height=600,left=600,resizable=no");
         }
   </script>
