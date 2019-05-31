@@ -4,51 +4,34 @@
     <title><%= title %></title>
     <meta charset="utf-8" name="viewport" content="width=device-width,height=device-height, initial-scale = 1.0" />
     <link rel='stylesheet' href='/stylesheets/style.css' >
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet">
+    <script  src='/javascripts/main.js' type="text/javascript"></script>
+ 
+
   </head>
   <body onresize="parent.resizeTo(375,600)" onload="parent.resizeTo(375,600)">
     <h1><%= title %></h1>
-          
-
-
-
-      
     <table>
       <tr>
-      <td>
-          <input id="naver" class= 'button' type="button" value="naver"  onclick="naverwindow()">
-      </td>
+        <td>
+            <input id="naver" class= 'button' type="button" value="naver"  onclick="naverwindow()">
+        </td>
+        <td>
+          <input id="daum" class= 'button' type="button" value="daum"  onclick="daumwindow()">
+        </td>
+      </tr>
 
-      <td>
-        <input id="daum" class= 'button' type="button" value="daum"  onclick="daumwindow()">
-      </td>
-    </tr>
-  <tr>
-      <td>
-        <input id="melon" class= 'button' type="button" value="melon"  onclick="melonwindow()">
-      </td>
-      <td>
-        <input id="genie" class= 'button' type="button" value="genie"  onclick="geniewindow()">
-      </td>
+      <tr>
+        <td>
+          <input id="melon" class= 'button' type="button" value="melon"  onclick="melonwindow()">
+        </td>
+        <td>
+          <input id="genie" class= 'button' type="button" value="genie"  onclick="geniewindow()">
+        </td>
       </tr>
     </table>
-    <p>Welcome to <%= title %></p>
+    <p>Welcome to <%= title %> </p>
+    <p id="press">Press the buttons!</p>
   </body>
-  <script>
-        function naverwindow(){
-            var url="/naver";
-            window.open(url,"","width=375,height=600,left=600,resizable=no");
-        }
-        function daumwindow(){
-            var url="/daum";
-            window.open(url,"","width=375,height=600,left=600,resizable=no");
-        }
-        function melonwindow(){
-            var url="/melon";
-            window.open(url,"","width=375,height=600,left=600,resizable=no");
-        }
-        function geniewindow(){
-            var url="/genie";
-            window.open(url,"","width=375,height=600,left=600,resizable=no");
-        }
-  </script>
+
 </html>

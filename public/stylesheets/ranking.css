@@ -1,0 +1,17 @@
+#title{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    border: solid 1px #fff;
+    text-align: center;
+}
+#time{
+    text-align: right;
+
+}
+#name{
+    color: #fff;
+line-height: 23px;
+letter-spacing: 1px;
+    
+}

@@ -5,23 +5,29 @@ body{
   margin: 0 auto;
   letter-spacing: 2px;
   text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
-  color: #fff;
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
+  color: #3cb4ff;
 }
 h1{
   text-align: center;
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 100px;
+}
+#press{
+  letter-spacing: 2px;
+
+  text-decoration-line: underline;
+  font-size: 30px;
+  color: #3cb4ff;
 }
 table{
   
   position: relative;
   text-align: center;
-margin: 0 auto;
-
+  margin: 0 auto;
   height: 400px;
   width: 400px;
 }
@@ -38,13 +44,15 @@ margin: 0 auto;
   margin: 0 auto;
   padding: 50px 50px;
   position: relative;
-
+  outline: 0px;
+  background-color: #fff; 
 }
 
 
 .button:hover {
   background-color:#3cb4ff; 
-  color: #fff;
+  color: rgb(239, 243, 247);
+  border: 3px solid #fff;
 
 }
 
